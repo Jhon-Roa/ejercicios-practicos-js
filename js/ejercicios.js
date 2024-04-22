@@ -34,3 +34,11 @@ function bmi(peso, altura) {
         console.log('estas obeso')
     }
 }
+
+//ejercicio 4 
+
+function imprimirArreglo(...elementos) {
+    for (let i = 0; i < elementos.length; i++) {
+        console.log(elementos[i]);
+    }
+}
