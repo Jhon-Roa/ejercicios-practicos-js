@@ -159,3 +159,118 @@ function multiplicarArreglo(array) {
 }
 
 //ejercicio 11
+
+function removerCeros(array) {
+    notZero = []
+
+    for (item of array) {
+        if (item != 0) {
+            notZero.push(item)
+        }
+    }
+
+    console.log(notZero)
+}
+
+//ejercicio 12
+
+function transcribir(cadena) {
+    let cadenaS = String(cadena)
+    let arn = ''
+
+    for (letra of cadenaS) {
+        switch (letra) {
+            case 'G': {
+                arn = arn.concat('C');
+                break;
+            }
+            case 'C': {
+                arn = arn.concat('G');
+                break;
+            }
+            case 'T': {
+                arn = arn.concat('A');
+                break;
+            }
+            case 'A': {
+                arn = arn.concat('U');
+                break;
+            }
+        }
+    }
+
+    console.log (arn)
+}
+
+//ejercicio 13
+
+function capitalizar(palabra) {
+    let capitalizacion = String(palabra).charAt(0).toUpperCase() + String(palabra.slice(1))
+
+    console.log(capitalizacion)
+}
+
+//ejercicio 14
+
+function max(array) {
+    let mayor = 0
+
+    for (item of array) {
+        if (item > mayor) {
+            mayor = item
+        }
+    }
+
+    console.log('el numero mayor es ' + mayor)
+}
+
+//ejercicio 15
+
+function pares(array) {
+    let pares = []
+
+    for (item of array) {
+        if (item % 2 === 0) {
+            pares.push(item)
+        }
+    }
+
+    console.log(pares)
+}
+
+//ejercicio 16
+
+function password(cadena) {
+    let cadenaS = String(cadena)
+    let contraseña = ''
+
+    for (letra of cadenaS) {
+        letraLower= letra.toLowerCase()
+        if (letraLower === 'a' || letraLower === 'e' || letraLower === 'i' || letraLower === 'o' ) {
+            switch (letraLower) {
+                case 'a': {
+                    contraseña = contraseña.concat('4');
+                    break;
+                }
+                case 'e': {
+                    contraseña = contraseña.concat('3');
+                    break;
+                }
+                case 'i': {
+                    contraseña = contraseña.concat('1');
+                    break;
+                }
+                case 'o': {
+                    contraseña = contraseña.concat('0');
+                    break;
+                }
+            }
+        }else if (letraLower === ' '){
+            continue
+        }else {
+            contraseña = contraseña.concat(letraLower)
+        }
+    }
+
+    console.log (contraseña)
+}
