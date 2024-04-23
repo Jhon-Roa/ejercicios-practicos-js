@@ -27,9 +27,7 @@ Lo único destacable es que esta no es una función flecha
 ### Código:
 
 `function devolverUltimoElemento(array) {
-
-## if(array.length === 0) {
-
+if(array.length === 0) {
 return "No hay elementos en el array";
 }
 if(!Array.isArray(array)) {
