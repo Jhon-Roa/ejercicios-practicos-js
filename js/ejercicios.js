@@ -274,3 +274,33 @@ function password(cadena) {
 
     console.log (contraseña)
 }
+
+//ejercicio 17
+
+function posiciones(array) {
+    let paresI = []
+    let i = 0
+
+    for (item of array) {
+        i ++
+        if (item % 2 === 0) {
+            paresI.push(i)
+        }
+    }
+
+    console.log(paresI)
+}
+
+//ejercicio 18 
+
+function empiezanConA(array) {
+    startWithA = []
+
+    for (item of array) {
+        if (item.charAt(0) === 'a' || item.charAt(0) === 'A') {
+            startWithA.push(item)
+        }
+    }
+
+    console.log(startWithA)
+}
